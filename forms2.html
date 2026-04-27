@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <label for="username">enter your username</label>
+        <input type="text" id="username" minlength="3" maxlength="18" placeholder="spongebob squareapants">
+        <br>
+        <label for="password">enter your passoword</label>
+        <input type="password" id="password">
+        <br>
+        <label for="email">enter your email</label>
+        <input type="email" id="email" placeholder="squareapants@gmail.com">
+        <br>
+
+        <label for="date"> enter your birthday</label>
+        <input type="date" form="date">
+        <br>
+
+        <label for="phone">enter your phone number</label>
+        <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <br>
+        <label for="quantity">what is the quantity of
+            things you want</label>
+
+        <input type="number" id="quantity" max="99" min="0" value="1"><br>
+
+
+        <label for="title">title</label>
+
+        <label for="mr">mr</label>
+        <input type="radio" id="mr" value="mr" name="title">
+
+        <label for="ms">ms</label>
+        <input type="radio" id="ms" value="ms" name="title">
+
+        <label for="dr">dr</label>
+        <input type="radio" id="dr" value="dr" name="title"><br>
+
+        <label for="payment">payment</label>
+        <select name="payment" id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastecard</option>
+            <option value="giftcard">giftcard</option>
+        </select> <br>
+
+        <label for="subscribe">subscrible</label>
+        <input type="checkbox" id="subscribe"><br>
+
+
+        <label for="subs">like </label>
+        <input type="checkbox" id="subs">
+        <br>
+
+        <label for="text" >text area</label>
+        <textarea name="text" id="text"
+        rows="3"
+        cols="2"></textarea>
+<br>
+        <label for="filesubmission">file</label>
+        <input type="file" id="filesubmission"
+        accept="image/png,image/jpeg,audio/mp3"
+        >
+
+
+
+        <br>
+        <input type="submit">
+        <br>
+        <input type="reset">
+
+
+    </form>
+</body>
+
+</html>
